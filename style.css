@@ -215,10 +215,20 @@ a{ color:inherit; text-decoration:none; }
 }
 
 .editor-body{ display:flex; }
-.line-numbers{
-  font-family:var(--font-mono); font-size:.8rem; color:var(--text-faint); text-align:right;
-  padding:48px 14px 48px 0; user-select:none; flex-shrink:0; width:52px;
+
+.line-numbers {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-faint);
+    text-align: right;
+    padding: 48px 14px 48px 0;
+    user-select: none;
+    flex-shrink: 0;
+    width: 52px;
+    white-space: pre-line;
+    line-height: 1.85;
 }
+
 .code-content{ padding:48px 40px 60px 24px; flex:1; max-width:900px; }
 
 /* reveal-on-scroll */
