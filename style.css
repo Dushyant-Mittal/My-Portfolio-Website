@@ -1,6 +1,4 @@
-/* =========================================================
-   TOKENS
-========================================================= */
+
 :root{
   --bg:            #0d1117;
   --bg-panel:      #10151c;
@@ -70,9 +68,9 @@ a{ color:inherit; text-decoration:none; }
 }
 .cursor-ring.hover{ width:54px; height:54px; border-color:var(--accent-blue); }
 
-/* =========================================================
-   PRELOADER / BOOT SEQUENCE
-========================================================= */
+/*
+   PRELOADER 
+*/
 .preloader{
   position:fixed; inset:0; background:var(--bg); z-index:10000;
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px;
@@ -87,9 +85,9 @@ a{ color:inherit; text-decoration:none; }
 .boot-bar{ width:min(380px, 80vw); height:3px; background:var(--bg-raised); border-radius:2px; overflow:hidden; }
 .boot-bar-fill{ height:100%; width:0%; background:linear-gradient(90deg, var(--accent-blue), var(--accent-green)); transition:width .25s ease; }
 
-/* =========================================================
+/*
    ANIMATED BACKGROUND
-========================================================= */
+*/
 #bgCanvas{
   position:fixed; inset:0; z-index:-2; width:100%; height:100%; opacity:.55;
 }
@@ -126,9 +124,9 @@ a{ color:inherit; text-decoration:none; }
 ::-webkit-scrollbar-thumb{ background:var(--border); border-radius:5px; }
 ::-webkit-scrollbar-thumb:hover{ background:var(--text-faint); }
 
-/* =========================================================
+/*
    STATUS BAR
-========================================================= */
+*/
 .statusbar{
   position:fixed; top:0; left:0; right:0; height:var(--statusbar-h);
   background:var(--bg-raised); border-bottom:1px solid var(--border);
@@ -158,9 +156,9 @@ a{ color:inherit; text-decoration:none; }
 }
 .menu-toggle span{ width:20px; height:2px; background:var(--text); display:block; }
 
-/* =========================================================
+/*
    APP SHELL / EXPLORER
-========================================================= */
+*/
 .app-shell{ display:flex; padding-top:var(--statusbar-h); min-height:100vh; }
 
 .explorer{
@@ -202,9 +200,9 @@ a{ color:inherit; text-decoration:none; }
 }
 .git-badge.added{ background:var(--accent-green); }
 
-/* =========================================================
+/*
    EDITOR / PANES
-========================================================= */
+*/
 .editor{ margin-left:var(--explorer-w); width:calc(100% - var(--explorer-w)); }
 
 .pane{ border-bottom:1px solid var(--border); }
@@ -267,9 +265,9 @@ a{ color:inherit; text-decoration:none; }
 .reveal.in-view .skill-card:nth-child(6){ transition-delay:.5s; }
 .reveal.in-view .profile-pill:nth-child(4){ transition-delay:.32s; }
 
-/* =========================================================
+/*
    HERO
-========================================================= */
+*/
 .hero-body{ min-height:calc(100vh - var(--statusbar-h) - 45px); align-items:center; }
 .hero-body .code-content{ padding-top:70px; }
 
@@ -388,9 +386,9 @@ a{ color:inherit; text-decoration:none; }
 @keyframes scrollpulse{ 0%,100%{ opacity:.3; } 50%{ opacity:1; } }
 .hero{ position:relative; }
 
-/* =========================================================
+/*
    ABOUT
-========================================================= */
+*/
 .md-h1{ font-family:var(--font-display); font-size:clamp(1.5rem, 3vw, 1.9rem); color:var(--accent-green); margin-bottom:24px; font-weight:700; letter-spacing:-0.02em; }
 .md-p{ color:var(--text-muted); font-size:1.04rem; max-width:62ch; margin-bottom:18px; font-weight:400; letter-spacing:-0.001em; }
 .md-p strong{ color:var(--text); font-weight:600; }
@@ -460,9 +458,9 @@ a.contact-meta-item:hover{ border-color:var(--accent-green); transform:translate
 .meta-label{ font-size:.68rem; color:var(--accent-blue); text-transform:uppercase; letter-spacing:.08em; min-width:56px; }
 .contact-meta-item.static{ cursor:default; }
 
-/* =========================================================
+/*
    SECTION HEADERS (shared)
-========================================================= */
+*/
 .section-eyebrow{
   font-family:var(--font-mono); color:var(--accent-orange); font-size:.78rem; margin-bottom:12px;
   text-transform:uppercase; letter-spacing:.14em; font-weight:500;
@@ -472,9 +470,9 @@ a.contact-meta-item:hover{ border-color:var(--accent-green); transform:translate
   font-weight:700; letter-spacing:-0.02em; line-height:1.15;
 }
 
-/* =========================================================
+/*
    SKILLS
-========================================================= */
+*/
 .skills-grid{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px; max-width:760px; margin-bottom:32px; }
 .skill-card{ background:var(--bg-raised); border:1px solid var(--border); border-radius:var(--radius); padding:16px 18px; }
 .skill-top{ display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:.83rem; margin-bottom:10px; color:var(--text); font-weight:500; }
@@ -492,9 +490,9 @@ a.contact-meta-item:hover{ border-color:var(--accent-green); transform:translate
 }
 .chip:hover{ border-color:var(--accent-purple); color:var(--accent-purple); }
 
-/* =========================================================
+/*
    PROJECTS
-========================================================= */
+*/
 .project-list{ display:flex; flex-direction:column; gap:60px; max-width:900px; }
 .project-card{ display:flex; gap:40px; align-items:center; }
 .project-card.reverse{ flex-direction:row-reverse; }
@@ -534,9 +532,9 @@ a.contact-meta-item:hover{ border-color:var(--accent-green); transform:translate
 .project-link{ font-family:var(--font-mono); font-size:.85rem; color:var(--accent-green); border-bottom:1px solid transparent; transition:border-color .2s ease; }
 .project-link:hover{ border-color:var(--accent-green); }
 
-/* =========================================================
+/*
    CONTACT
-========================================================= */
+*/
 .contact-sub{ color:var(--text-muted); max-width:520px; margin-bottom:36px; }
 .contact-form{ max-width:520px; display:flex; flex-direction:column; gap:18px; margin-bottom:40px; }
 .form-row{ display:flex; flex-direction:column; gap:8px; }
@@ -559,9 +557,9 @@ a.contact-meta-item:hover{ border-color:var(--accent-green); transform:translate
 
 .footer{ text-align:center; padding:32px 20px; font-family:var(--font-mono); font-size:.75rem; color:var(--text-faint); }
 
-/* =========================================================
+/*
    RESPONSIVE
-========================================================= */
+*/
 @media (max-width: 900px){
   .project-card, .project-card.reverse{ flex-direction:column; align-items:flex-start; }
   .project-thumb{ width:100%; height:160px; }
