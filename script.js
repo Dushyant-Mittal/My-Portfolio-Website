@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     [['  ', ''], ['str', "'role'"], [': ', ''], ['str', "'CS Engineering Student & Web Developer'"], [',', '']],
     [['  ', ''], ['str', "'stack'"], [': [', ''], ['str', "'React'"], [', ', ''], ['str', "'Node'"], [', ', ''], ['str', "'MongoDB'"], ['],', '']],
     [['  ', ''], ['fn', 'buildsThingsThat'], ['(', ''], [')', ''], [' {', '']],
-    [['    ', ''], ['kw', 'return'], [' ', ''], ['str', "'fast, real-time, and well-engineered.'"], [';', '']],
+    [['    ', ''], ['kw', 'return'], [' ', ''], ['str', " 'fast, real-time, and well-engineered.'"], [';', '']],
     [['  }', '']],
     [['};', '']],
     [['', ''], ['cm', '// Full-Stack Developer  · Patent Holder   .  5★ C++ on HackerRank  .  2100+ DSA problems solved • HDFC & IndusInd Bank Scholar'], ['', '']],
