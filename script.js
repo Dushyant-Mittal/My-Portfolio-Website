@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     [['    ', ''], ['kw', 'return'], [' ', ''], ['str', "'fast, real-time, and well-engineered.'"], [';', '']],
     [['  }', '']],
     [['};', '']],
-    [['', ''], ['cm', '// Full-Stack Developer  · Patent Holder   .  5★ C++ on HackerRank  .  1800+ DSA problems solved • HDFC & IndusInd Bank Scholar'], ['', '']],
+    [['', ''], ['cm', '// Full-Stack Developer  · Patent Holder   .  5★ C++ on HackerRank  .  2100+ DSA problems solved • HDFC & IndusInd Bank Scholar'], ['', '']],
   ];
 
   function renderLineHTML(tokens) {
